@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Foodies Fitness</string>
+    <string name="apiKey">bc3ce8eb790c4fec96aa9d471cedd4a9</string>
+    <string name="search">Search</string>
+    <string name="enter_dish_name">Enter dish name</string>
+    <string name="app_id">ca-app-pub-5488645051181071~2569237605</string>
+    <string name="ban_add_1">ca-app-pub-5488645051181071/5531330918</string>
+    <string-array name="tags">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>dessert</item>
+        <item>breakfast</item>
+        <item>bread</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
+</resources>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".M1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                >
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Healthy Foods"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="30dp"
+                            android:textColor="@color/mehroon"
+                            android:textSize="25dp"
+                            android:textStyle="bold|italic"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="51dp"
+                            tools:layout_editor_absoluteY="44dp" />
+
+
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="153dp"
+                            android:layout_height="151dp"
+                            app:srcCompat="@drawable/blood_pressure"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="129dp"
+                            tools:layout_editor_absoluteY="59dp" />
+                        <Button
+                            android:id="@+id/hummus_button"
+                            android:layout_width="288dp"
+                            android:layout_height="44dp"
+                            android:text="veggieandhummussandwich"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="67dp"
+                            tools:layout_editor_absoluteY="197dp" />
+
+                        <Button
+                            android:id="@+id/burger_button"
+                            android:layout_width="285dp"
+                            android:layout_height="55dp"
+                            android:text="CheeseburgerStuffedBakedPotato"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="67dp"
+                            tools:layout_editor_absoluteY="251dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="147dp"
+                            android:layout_height="137dp"
+                            app:srcCompat="@drawable/diabetes"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="135dp"
+                            tools:layout_editor_absoluteY="316dp" />
+
+
+
+                        <Button
+                            android:id="@+id/muffin_button"
+                            android:layout_width="185dp"
+                            android:layout_height="35dp"
+                            android:text="PBJEnglishMuffin"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="113dp"
+                            tools:layout_editor_absoluteY="462dp" />
+
+                        <Button
+                            android:id="@+id/tuna_button"
+                            android:layout_width="197dp"
+                            android:layout_height="36dp"
+                            android:text="TunaLunchSalad"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="113dp"
+                            tools:layout_editor_absoluteY="497dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="147dp"
+                            android:layout_height="150dp"
+                            app:srcCompat="@drawable/heart"
+                            tools:layout_editor_absoluteX="135dp"
+                            tools:layout_editor_absoluteY="524dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/beetroot_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beetroot Hummus"
+                            tools:layout_editor_absoluteX="120dp"
+                            tools:layout_editor_absoluteY="671dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/salmon_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Salmon pate"
+                            tools:layout_editor_absoluteX="135dp"
+                            tools:layout_editor_absoluteY="719dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="145dp"
+                            android:layout_height="154dp"
+                            app:srcCompat="@drawable/liver"
+                            tools:layout_editor_absoluteX="137dp"
+                            tools:layout_editor_absoluteY="755dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/penne_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Penne Ratatoulle"
+                            tools:layout_editor_absoluteX="135dp"
+                            tools:layout_editor_absoluteY="898dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/avocado_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AvocadoAndChickenSalad"
+                            tools:layout_editor_absoluteX="113dp"
+                            tools:layout_editor_absoluteY="946dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="155dp"
+                            android:layout_height="176dp"
+                            app:srcCompat="@drawable/kidney"
+                            tools:layout_editor_absoluteX="137dp"
+                            tools:layout_editor_absoluteY="962dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/eggs_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Avocado Devilled Eggs"
+                            tools:layout_editor_absoluteX="120dp"
+                            tools:layout_editor_absoluteY="1105dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/cake_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quinoa Cakes"
+                            tools:layout_editor_absoluteX="152dp"
+                            tools:layout_editor_absoluteY="1153dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="158dp"
+                            android:layout_height="204dp"
+                            app:srcCompat="@drawable/gastro"
+                            tools:layout_editor_absoluteX="135dp"
+                            tools:layout_editor_absoluteY="1153dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/kimchi_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kimchi Fried Rice"
+                            tools:layout_editor_absoluteX="123dp"
+                            tools:layout_editor_absoluteY="1305dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/misosoup_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Miso Soup"
+                            tools:layout_editor_absoluteX="158dp"
+                            tools:layout_editor_absoluteY="1353dp"
+                            tools:ignore="MissingConstraints" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    app:backgroundTint="@color/camel"
+                    app:itemIconTint="@drawable/selector"
+                    app:itemTextColor="@drawable/selector"
+                    app:menu="@menu/menu_nav" />
+</RelativeLayout>

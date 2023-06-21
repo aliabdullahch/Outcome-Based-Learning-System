@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey_color"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Recipie_Details_Screen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mehroon"
+        >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipie Details"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                />
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/meal_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recipie Name"
+                android:textStyle="bold|italic"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:id="@+id/meal_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recipie Name"
+                android:textStyle="bold|italic"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                />
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="200sp"
+               app:cardBackgroundColor="@color/white"
+               android:layout_margin="15dp"
+               app:cardCornerRadius="22dp">
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/detail_image"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+
+
+                   />
+           </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/meal_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Summary"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/light_grey"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:id="@+id/meal_Ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:textStyle="bold|italic"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recipieDetailRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

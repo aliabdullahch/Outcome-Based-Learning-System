@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/camel"
+    android:elevation="8dp"
+    app:cardCornerRadius="25dp"
+    android:id="@+id/Shared_recipie_card"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/shared_recipie_name_id"
+            android:text="Dish Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:textColor="@color/mehroon"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            />
+        <ImageView
+            android:id="@+id/shared_recipie_image_id"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_gravity="center"
+            android:id="@+id/shared_shared_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Share"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

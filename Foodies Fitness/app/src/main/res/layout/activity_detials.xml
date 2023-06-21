@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical"
+    tools:context=".Detials_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mehroon"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipie Details"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/rn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recipie Name"
+                android:textStyle="bold|italic"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@color/mehroon"
+                android:layout_margin="5dp"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="22dp">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/rm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Summary"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:id="@+id/rin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:textStyle="bold|italic"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

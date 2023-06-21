@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Explore"
+     android:icon="@drawable/explore" android:id="@+id/explore_button"
+    />
+    <item android:title="My Recipes"
+        android:icon="@drawable/my_recipies"
+        android:id="@+id/my_recipes_button" />
+
+    <item android:title="Shared"
+        android:icon="@drawable/shared_me"
+        android:id="@+id/shared_button"
+        />
+    <item android:title="Diseases"
+        android:icon="@drawable/ic_health_svgrepo_com"
+        android:id="@+id/health_button"
+        />
+    <item android:title="Origin"
+        android:icon="@drawable/ic_origin_svgrepo_com"
+        android:id="@+id/origin_id"
+        />
+</menu>
