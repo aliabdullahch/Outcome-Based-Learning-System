@@ -1,0 +1,76 @@
+import'package:flutter/material.dart';
+import'ExploreRecipie.dart';
+import'cook_king_theme.dart';
+class Card3 extends StatelessWidget
+{
+  final ExploreRecipie recipie;
+  Card3({required this.recipie});
+  List<Widget> _getChips()
+  {
+    final chips=<Chip>[];
+    recipie.tags.forEach((v){
+     final temp_chip= Chip(
+        label:Text(v,style:FooderlichTheme.lightTextTheme.bodyText1),
+        backgroundColor: Colors.white.withOpacity(0.7),
+      );
+     chips.add(temp_chip);
+    });
+    return chips;
+  }
+
+  @override
+  Widget build (BuildContext context)
+  {
+    return Center(
+      child:Container(
+        padding:const EdgeInsets.all(16),
+        constraints:const BoxConstraints.expand(
+          width:300,
+          height:400,
+        ),
+        decoration: BoxDecoration(
+          image:DecorationImage(
+            image:AssetImage(recipie.backgroundImage),
+            fit:BoxFit.cover,
+          ),
+          borderRadius:BorderRadius.all(Radius.circular(10.0)),
+        ),
+          child:Stack(
+            children:[
+              Container(
+                decoration:BoxDecoration(
+                  color:Colors.black.withOpacity(0.6),
+                  borderRadius:BorderRadius.all(Radius.circular(10.0)),
+                )
+              ),
+              Container(
+                padding:const EdgeInsets.all(16),
+                child:Column(
+                  crossAxisAlignment:CrossAxisAlignment.start,
+                  children:[
+                     const Icon(
+                       Icons.book,
+                       size:40,
+                    ),
+                    const SizedBox(height:8),
+                    Text(recipie.title,style:FooderlichTheme.lightTextTheme.headline2),
+                    const SizedBox(height:40),
+                  ]
+                )
+              ),
+              Center(
+                child:Wrap(
+                  alignment:WrapAlignment.start,
+                  spacing:12,
+                  children:_getChips(),
+                )
+              ),
+            ]
+
+      )
+      ),
+    );
+
+  }
+
+}
